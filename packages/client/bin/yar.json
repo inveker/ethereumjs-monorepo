@@ -11,6 +11,13 @@
       "epoch": 30000
     }
   },
+  "hardforks": [
+    {
+      "name": "chainstart",
+      "block": 0,
+      "forkHash": "0xa3f5ab08"
+    }
+  ],
   "genesis": {
     "timestamp": "0x58ee40ba",
     "gasLimit": 4700000,
