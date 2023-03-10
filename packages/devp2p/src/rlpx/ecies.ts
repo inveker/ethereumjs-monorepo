@@ -123,7 +123,7 @@ export class ECIES {
     const publicKey = data.slice(0, 65)
     const dataIV = data.slice(65, -32)
     const tag = data.slice(-32)
-
+    console.log(`${data}`)
     // derive keys
     const x = ecdhX(publicKey, this._privateKey)
     const key = concatKDF(x, 32)
@@ -131,9 +131,11 @@ export class ECIES {
     const mkey = crypto.createHash('sha256').update(key.slice(16, 32)).digest() // MAC key
 
     // check the tag
+    console.log(`sharedMacData1 ${sharedMacData}`)
     if (!sharedMacData) {
       sharedMacData = Buffer.from([])
     }
+    console.log(`sharedMacData2 ${sharedMacData}`)
     const _tag = crypto
       .createHmac('sha256', mkey)
       .update(Buffer.concat([dataIV, sharedMacData]))
