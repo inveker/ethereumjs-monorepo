@@ -1,0 +1,24 @@
+{
+    "name": "yar",
+    "chainId": 10226688,
+    "networkId": 10226688,
+    "defaultHardfork": "merge",
+    "consensus": {
+      "type": "poa",
+      "algorithm": "clique",
+      "clique": {
+        "period": 15,
+        "epoch": 30000
+      }
+    },
+    "comment": "The YAR test chain",
+    "bootstrapNodes": [
+      {
+        "ip": "65.108.204.75",
+        "port": 20307,
+        "id": "d830d115846037a9c17591027437c4a6a1e5dd9e40767c25c61820170834119beb09f6abdf0f6b2f1eeab9c1745f39d977c7d3e01bdf6836b8a93ca0f4bc4746",
+        "location": "ap-southeast-1-001",
+        "comment": "bootnode-aws-ap-southeast-1-001"
+      }
+    ]
+  }
