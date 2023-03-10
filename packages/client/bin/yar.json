@@ -3,11 +3,20 @@
   "chainId": 10226688,
   "networkId": 10226688,
   "defaultHardfork": "merge",
+  "homesteadBlock": 0,
+  "eip150Block": 0,
+  "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "eip155Block": 0,
+  "eip158Block": 0,
+  "byzantiumBlock": 0,
+  "constantinopleBlock": 0,
+  "petersburgBlock": 0,
+  "istanbulBlock": 0,
   "consensus": {
     "type": "poa",
     "algorithm": "clique",
     "clique": {
-      "period": 15,
+      "period": 5,
       "epoch": 30000
     }
   },
